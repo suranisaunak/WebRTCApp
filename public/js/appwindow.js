@@ -5,7 +5,7 @@
  *  that can be found in the LICENSE file in the root of the source
  *  tree.
  */
- 
+
 
 /* More information about these options at jshint.com/docs/options */
 // Variables defined in and used from main.js.
@@ -18,7 +18,7 @@
 var roomServer = 'https://apprtc.appspot.com';
 var loadingParams = {
   errorMessages: [],
-  suggestedRoomId: randomString(9),
+  suggestedRoomId: randomString(4),
   roomServer: roomServer,
   connect: false,
   paramsFunction: function() {
