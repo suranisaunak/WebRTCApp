@@ -124,8 +124,11 @@ body
         loadingParams.roomId = '!{room_id}';
         loadingParams.roomLink = '!{room_link}';
 
-        #{room_id}
       }
+
+      div
+      - console.log(room_id)
+      div
 
       var appController;
 
@@ -148,6 +151,6 @@ body
         document.removeEventListener('webkitvisibilitychange', onVisibilityChange);
         initialize();
       }
-      
+
 
       initialize();
