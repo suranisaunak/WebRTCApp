@@ -31,6 +31,7 @@ function generateRandom(length) {
   for (var i = 0; i < length; i++) {
     word += Math.floor((Math.random() * 10));
   }
+  console.log("generateRandom :- "+ word);
   return word;
 }
 
