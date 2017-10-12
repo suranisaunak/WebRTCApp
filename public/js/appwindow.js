@@ -5,6 +5,7 @@
  *  that can be found in the LICENSE file in the root of the source
  *  tree.
  */
+ 
 
 /* More information about these options at jshint.com/docs/options */
 // Variables defined in and used from main.js.
