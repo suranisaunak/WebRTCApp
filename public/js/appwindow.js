@@ -17,7 +17,7 @@
 var roomServer = 'https://apprtc.appspot.com';
 var loadingParams = {
   errorMessages: [],
-  suggestedRoomId: '000010000';//randomString(9),
+  suggestedRoomId: randomString(9),
   roomServer: roomServer,
   connect: false,
   paramsFunction: function() {
