@@ -294,6 +294,7 @@ function getRoomParameters(req, roomId, clientId, isInitiator) {
   if (roomId) {
     params['room_id'] = roomId;
     params['room_link'] =  protocol + "://" + req.headers.host + '/r/' + roomId + '?' + querystring.stringify(req.query);
+    console.log("roomId :- "+ roomId);
   }
   if (clientId) {
     params['client_id'] = clientId;
