@@ -104,7 +104,6 @@ body
 
   if !chromeapp
     script(type="text/javascript").
-      function onLoadCall{
       var loadingParams = {
         errorMessages: '!{error_messages}',
         isLoopback: #{is_loopback},
@@ -118,7 +117,7 @@ body
         wssPostUrl: '!{wss_post_url}',
         bypassJoinConfirmation: #{bypass_join_confirmation},
         versionInfo: '!{version_info}'
-      }; }
+      };
 
       var roomId = '!{room_id}';
       
