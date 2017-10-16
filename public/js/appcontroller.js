@@ -120,7 +120,7 @@ var AppController = function(loadingParams) {
       var confirmJoinDiv = $(UI_CONSTANTS.confirmJoinDiv);
       this.show_(confirmJoinDiv);
 
-      $(UI_CONSTANTS.confirmJoinButton).onload = function() {
+      $(UI_CONSTANTS.confirmJoinButton).onclick = function() {
         this.hide_(confirmJoinDiv);
 
         // Record this room in the recently used list.
