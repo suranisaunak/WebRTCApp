@@ -100,7 +100,7 @@ footer > div {
 }
 
 footer > div.active {
-  display: none;
+  display: block;
   opacity: .8;
 }
 
