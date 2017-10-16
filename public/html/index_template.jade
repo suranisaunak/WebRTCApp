@@ -27,7 +27,7 @@ head
     link(rel="canonical", href=room_link)
   link(rel="stylesheet", href="/css/main.css")
   
-body
+body onload='onLoadCall()'
   //
      * Keep the HTML id attributes in sync with |UI_CONSTANTS| defined in
      * appcontroller.js.
@@ -104,6 +104,7 @@ body
 
   if !chromeapp
     script(type="text/javascript").
+      function onLoadCall{
       var loadingParams = {
         errorMessages: '!{error_messages}',
         isLoopback: #{is_loopback},
@@ -117,7 +118,7 @@ body
         wssPostUrl: '!{wss_post_url}',
         bypassJoinConfirmation: #{bypass_join_confirmation},
         versionInfo: '!{version_info}'
-      };
+      }; }
 
       var roomId = '!{room_id}';
       
