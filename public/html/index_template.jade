@@ -104,6 +104,7 @@ body
 
   if !chromeapp
     script(type="text/javascript").
+
       var loadingParams = {
         errorMessages: '!{error_messages}',
         isLoopback: #{is_loopback},
@@ -119,7 +120,7 @@ body
         versionInfo: '!{version_info}'
       };
 
-      var roomId = '!{room_id}';
+      var roomId = '123456';
       
       if (roomId.length > 0) {
         loadingParams.roomId = '!{room_id}';
