@@ -37,11 +37,11 @@ body
     video#local-video(autoplay, muted)
 
   #room-selection.hidden
-    h1 AppRTC
-    p#instructions Please enter a room name...
+   // h1 AppRTC
+   // p#instructions Please enter a room name...
     div
       #room-id-input-div
-        input#room-id-input(type='text', autofocus='')
+        input#room-id-input(type='text', autofocus='', value='123')
         label#room-id-input-label.error-label.hidden(for='room-id-input') Room name must be 5 or more characters and include only letters and numbers.
       #room-id-input-buttons
         button#join-button JOIN
@@ -104,7 +104,7 @@ body
 
   if !chromeapp
     script(type="text/javascript").
-    
+
       var loadingParams = {
         errorMessages: '!{error_messages}',
         isLoopback: #{is_loopback},
